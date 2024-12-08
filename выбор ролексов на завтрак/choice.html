@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Grid</title>
+    <link rel="stylesheet" href="choice.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+          <a href="index.html" class="main-text">NEXTON</a>
+          <a href="index.html" class="subtext">eCommerce</a>
+        </div>
+        <a href="#" class="icon-left">
+          <i class="fa-solid fa-circle-info"></i>
+        </a>
+        <div class="search-container">
+            <i class="fas fa-search"></i>
+            <input type="text" class="search-bar" placeholder="Search in products...">
+          </div>
+          <a href="#" class="icon-right">
+            <i class="fa-solid fa-bars"></i>
+          </a>
+          <div class="icons">
+            <a href="/выбор ролексов на завтрак/choice.html " class="icon">
+              <i class="fa-regular fa-user"></i>
+            </a>
+            <a href="/выбор ролексов на завтрак/choice.html" class="icon">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+          </div>
+      </header>
+
+      <main>
+        <div class="container">
+            <aside class="filters">
+                <section class="filter-section">
+                    <h3>Categories</h3>
+                    <ul class="categories">
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                <span>Men's fashion</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                <span>Women's fashion</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                <span>Kids & Toys</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                <span>Accessories</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                <span>Cosmetics</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                <span>Shoes</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                <span>Sports</span>
+                            </label>
+                        </li>
+                    </ul>
+                </section>
+        
+                <section class="filter-section">
+                    <div class="horizontal-line"></div>
+                    <h3>Price range</h3>
+                    <div class="price-range-slider">
+                        <div class="slider-fill"></div>
+                        <input type="range" min="100" max="500" step="1" value="100" id="min-slider">
+                        <input type="range" min="100" max="500" step="1" value="500" id="max-slider">
+                      </div>
+                    <div class="price-inputs">
+                      <div class="input-wrapper">
+                        <label>Min price</label>
+                        <div class="input-container">
+                          <input type="number" id="min-price" value="100" min="100" max="500">
+                          <i class="fas fa-dollar-sign"></i>
+                        </div>
+                      </div>
+                      <div class="input-wrapper">
+                        <label>Max price</label>
+                        <div class="input-container">
+                          <input type="number" id="max-price" value="500" min="100" max="500">
+                          <i class="fas fa-dollar-sign"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="horizontal-line"></div>
+                  </section>
+        
+                <section class="filter-section">
+                    <h3>Sort order</h3>
+                    <ul class="sort-options">
+                      <li><label><input type="checkbox" class="circle-checkbox" data-group="sort"><span>Most Popular</span></label></li>
+                      <li><label><input type="checkbox" class="circle-checkbox" data-group="sort"><span>Best Rating</span></label></li>
+                      <li><label><input type="checkbox" class="circle-checkbox" data-group="sort"><span>Newest</span></label></li>
+                      <li><label><input type="checkbox" class="circle-checkbox" data-group="sort"><span>Price Low - High</span></label></li>
+                      <li><label><input type="checkbox" class="circle-checkbox" data-group="sort"><span>Price High - Low</span></label></li>
+                    </ul>
+                  </section>
+            </aside>
+
+        <section class="recommendations-grid">
+            <div class="recommendation-card">
+                <a href="/обзор ролексов/review.html" class="image-wrapper">
+                    <img src="image.png" alt="Black Automatic Watch">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </a>
+                <div class="product-content">
+                    <div class="product-meta">
+                        <a href="/обзор ролексов/review.html" class="product-title">Black Automatic Watch</a>
+                        <p class="category">Accessories</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i> 4.9 (98)
+                        </div>
+                    </div>
+                    <div class="price">
+                        <span class="current-price">$169.99</span>
+                        <span class="old-price">$199.99</span>
+                    </div>
+                </div>
+            </div>
+            <div class="recommendation-card">
+                <a href="/обзор ролексов/review.html" class="image-wrapper">
+                    <img src="image.png" alt="Black Automatic Watch">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </a>
+                <div class="product-content">
+                    <div class="product-meta">
+                        <a href="/обзор ролексов/review.html" class="product-title">Black Automatic Watch</a>
+                        <p class="category">Accessories</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i> 4.9 (98)
+                        </div>
+                    </div>
+                    <div class="price">
+                        <span class="current-price">$169.99</span>
+                        <span class="old-price">$199.99</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recommendation-card">
+                <a href="/обзор ролексов/review.html" class="image-wrapper">
+                    <img src="image.png" alt="Black Automatic Watch">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </a>
+                <div class="product-content">
+                    <div class="product-meta">
+                        <a href="/обзор ролексов/review.html" class="product-title">Black Automatic Watch</a>
+                        <p class="category">Accessories</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i> 4.9 (98)
+                        </div>
+                    </div>
+                    <div class="price">
+                        <span class="current-price">$169.99</span>
+                        <span class="old-price">$199.99</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recommendation-card">
+                <a href="/обзор ролексов/review.html" class="image-wrapper">
+                    <img src="image.png" alt="Black Automatic Watch">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </a>
+                <div class="product-content">
+                    <div class="product-meta">
+                        <a href="/обзор ролексов/review.html" class="product-title">Black Automatic Watch</a>
+                        <p class="category">Accessories</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i> 4.9 (98)
+                        </div>
+                    </div>
+                    <div class="price">
+                        <span class="current-price">$169.99</span>
+                        <span class="old-price">$199.99</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recommendation-card">
+                <a href="/обзор ролексов/review.html" class="image-wrapper">
+                    <img src="image.png" alt="Black Automatic Watch">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </a>
+                <div class="product-content">
+                    <div class="product-meta">
+                        <a href="/обзор ролексов/review.html" class="product-title">Black Automatic Watch</a>
+                        <p class="category">Accessories</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i> 4.9 (98)
+                        </div>
+                    </div>
+                    <div class="price">
+                        <span class="current-price">$169.99</span>
+                        <span class="old-price">$199.99</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recommendation-card">
+                <a href="/обзор ролексов/review.html" class="image-wrapper">
+                    <img src="image.png" alt="Black Automatic Watch">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </a>
+                <div class="product-content">
+                    <div class="product-meta">
+                        <a href="/обзор ролексов/review.html" class="product-title">Black Automatic Watch</a>
+                        <p class="category">Accessories</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i> 4.9 (98)
+                        </div>
+                    </div>
+                    <div class="price">
+                        <span class="current-price">$169.99</span>
+                        <span class="old-price">$199.99</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recommendation-card">
+                <a href="/обзор ролексов/review.html" class="image-wrapper">
+                    <img src="image.png" alt="Black Automatic Watch">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </a>
+                <div class="product-content">
+                    <div class="product-meta">
+                        <a href="/обзор ролексов/review.html" class="product-title">Black Automatic Watch</a>
+                        <p class="category">Accessories</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i> 4.9 (98)
+                        </div>
+                    </div>
+                    <div class="price">
+                        <span class="current-price">$169.99</span>
+                        <span class="old-price">$199.99</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recommendation-card">
+                <a href="/обзор ролексов/review.html" class="image-wrapper">
+                    <img src="image.png" alt="Black Automatic Watch">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </a>
+                <div class="product-content">
+                    <div class="product-meta">
+                        <a href="/обзор ролексов/review.html" class="product-title">Black Automatic Watch</a>
+                        <p class="category">Accessories</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i> 4.9 (98)
+                        </div>
+                    </div>
+                    <div class="price">
+                        <span class="current-price">$169.99</span>
+                        <span class="old-price">$199.99</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recommendation-card">
+                <a href="/обзор ролексов/review.html" class="image-wrapper">
+                    <img src="image.png" alt="Black Automatic Watch">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </a>
+                <div class="product-content">
+                    <div class="product-meta">
+                        <a href="/обзор ролексов/review.html" class="product-title">Black Automatic Watch</a>
+                        <p class="category">Accessories</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i> 4.9 (98)
+                        </div>
+                    </div>
+                    <div class="price">
+                        <span class="current-price">$169.99</span>
+                        <span class="old-price">$199.99</span>
+                    </div>
+                </div>
+            </div>
+            <div class="recommendation-card">
+                <a href="/обзор ролексов/review.html" class="image-wrapper">
+                    <img src="image.png" alt="Black Automatic Watch">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </a>
+                <div class="product-content">
+                    <div class="product-meta">
+                        <a href="/обзор ролексов/review.html" class="product-title">Black Automatic Watch</a>
+                        <p class="category">Accessories</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i> 4.9 (98)
+                        </div>
+                    </div>
+                    <div class="price">
+                        <span class="current-price">$169.99</span>
+                        <span class="old-price">$199.99</span>
+                    </div>
+                </div>
+            </div>
+            <div class="recommendation-card">
+                <a href="/обзор ролексов/review.html" class="image-wrapper">
+                    <img src="image.png" alt="Black Automatic Watch">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </a>
+                <div class="product-content">
+                    <div class="product-meta">
+                        <a href="/обзор ролексов/review.html" class="product-title">Black Automatic Watch</a>
+                        <p class="category">Accessories</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i> 4.9 (98)
+                        </div>
+                    </div>
+                    <div class="price">
+                        <span class="current-price">$169.99</span>
+                        <span class="old-price">$199.99</span>
+                    </div>
+                </div>
+            </div>
+            <div class="recommendation-card">
+                <a href="/обзор ролексов/review.html" class="image-wrapper">
+                    <img src="image.png" alt="Black Automatic Watch">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </a>
+                <div class="product-content">
+                    <div class="product-meta">
+                        <a href="/обзор ролексов/review.html" class="product-title">Black Automatic Watch</a>
+                        <p class="category">Accessories</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i> 4.9 (98)
+                        </div>
+                    </div>
+                    <div class="price">
+                        <span class="current-price">$169.99</span>
+                        <span class="old-price">$199.99</span>
+                    </div>
+                </div>
+            </div>
+            <div class="recommendation-card">
+                <a href="/обзор ролексов/review.html" class="image-wrapper">
+                    <img src="image.png" alt="Black Automatic Watch">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </a>
+                <div class="product-content">
+                    <div class="product-meta">
+                        <a href="/обзор ролексов/review.html" class="product-title">Black Automatic Watch</a>
+                        <p class="category">Accessories</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i> 4.9 (98)
+                        </div>
+                    </div>
+                    <div class="price">
+                        <span class="current-price">$169.99</span>
+                        <span class="old-price">$199.99</span>
+                    </div>
+                </div>
+            </div>
+            <div class="recommendation-card">
+                <a href="/обзор ролексов/review.html" class="image-wrapper">
+                    <img src="image.png" alt="Black Automatic Watch">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </a>
+                <div class="product-content">
+                    <div class="product-meta">
+                        <a href="/обзор ролексов/review.html" class="product-title">Black Automatic Watch</a>
+                        <p class="category">Accessories</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i> 4.9 (98)
+                        </div>
+                    </div>
+                    <div class="price">
+                        <span class="current-price">$169.99</span>
+                        <span class="old-price">$199.99</span>
+                    </div>
+                </div>
+            </div>
+            <div class="recommendation-card">
+                <a href="/обзор ролексов/review.html" class="image-wrapper">
+                    <img src="image.png" alt="Black Automatic Watch">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </a>
+                <div class="product-content">
+                    <div class="product-meta">
+                        <a href="/обзор ролексов/review.html" class="product-title">Black Automatic Watch</a>
+                        <p class="category">Accessories</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i> 4.9 (98)
+                        </div>
+                    </div>
+                    <div class="price">
+                        <span class="current-price">$169.99</span>
+                        <span class="old-price">$199.99</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-column">
+            <div class="footer-logo">
+              <a href="index.html" class="footer-logo-main">NEXTON</a>
+              <a href="index.html" class="footer-logo-sub">eCommerce</a>
+            </div>
+            <ul class="social-links">
+              <li>
+                <a href="#">
+                  <img src="facebook.svg" alt="Facebook" class="social-icon"> Facebook
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="youtube.svg" alt="Youtube" class="social-icon"> Youtube
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="telegram.svg" alt="Telegram" class="social-icon"> Telegram
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="twitter.svg" alt="Twitter" class="social-icon"> Twitter
+                </a>
+              </li>
+            </ul>
+          </div>
+      
+          <div class="footer-column">
+            <h3 class="footer-heading">Getting started</h3>
+            <ul class="footer-links">
+              <li><a href="#">Release Notes</a></li>
+              <li><a href="#">Upgrade Guide</a></li>
+              <li><a href="#">Browser Support</a></li>
+              <li><a href="#">Dark Mode</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-column">
+            <h3 class="footer-heading">Explore</h3>
+            <ul class="footer-links">
+              <li><a href="#">Prototyping</a></li>
+              <li><a href="#">Design systems</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Security</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-column">
+            <h3 class="footer-heading">Community</h3>
+            <ul class="footer-links">
+              <li><a href="#">Discussion Forums</a></li>
+              <li><a href="#">Code of Conduct</a></li>
+              <li><a href="#">Contributing</a></li>
+              <li><a href="#">API Reference</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+          
+      <footer class="site-footer">
+        <div class="footer-lower">
+          <p class="footer-text">Nexton eCommerce. © 2024</p>
+          <div class="footer-payments">
+            <img src="visa.svg" alt="VISA" class="payment-icon">
+            <img src="paypal.svg" alt="PayPal" class="payment-icon">
+            <img src="stripe.svg" alt="Stripe" class="payment-icon">
+            <img src="verisign.svg" alt="VeriSign" class="payment-icon">
+          </div>
+        </div>
+      </footer>
+</main>
+<script src="choice.js"></script>
+</body>
+</html>
