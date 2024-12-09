@@ -154,7 +154,8 @@ header {
 .container {
     display: flex;
     gap: 20px;
-    padding: 40px 120px;
+    max-width: 1700px;
+    margin: 40px auto;
 }
 
 .filters {

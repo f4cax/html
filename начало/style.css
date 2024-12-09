@@ -322,8 +322,8 @@ body {
   border-radius: 10px;
   padding: 25px;
   background-color: #fff;
-  max-width: 100%;
-  margin: 45px 120px;
+  max-width: 1675px;
+  margin: 45px auto;
   gap: 20px;
 }
 
@@ -359,8 +359,8 @@ body {
 }
   
 .start-exploring {
-  margin: 70px 120px;
-  max-width: 100%;
+  margin: 70px auto;
+  max-width: 1700px;
   text-align: left;
   font-family: 'Poppins', sans-serif;
 }
@@ -482,7 +482,8 @@ body {
 }
 
 .recommendations-section {
-  margin: 70px 120px;
+  max-width: 1700px;
+  margin: 70px auto;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -618,7 +619,8 @@ body {
   position: relative;
   width: auto;
   height: 537px;
-  margin: 52px 120px;
+  max-width: 1700px;
+  margin: 52px auto;
   padding: 0 20px;
   border-radius: 38px;
   overflow: hidden;

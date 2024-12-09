@@ -20,7 +20,7 @@ header {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 main{
-  margin-top: 90px;
+  margin-top: 116px;
 }
 
 @media (max-width: 300px) {
@@ -151,9 +151,10 @@ header {
   .product-container {
     display: flex;
     gap: 30px;
-    margin: 80px 120px;
-    align-items: stretch;
+    margin: 40px auto;
+    max-width: 1700px;
     min-height: 70vh;
+    align-items: flex-start;
 }
   
   .product-gallery {
@@ -386,14 +387,6 @@ header {
     color: #111827;
     font-weight: bold;
   }
-  
-  .product-container {
-    display: flex;
-    gap: 30px;
-    margin: 40px 120px;
-    align-items: flex-start;
-    min-height: 70vh;
-  }
 
   .reviews{
     color: #4B5563;
@@ -401,7 +394,7 @@ header {
 
 
   .product-description {
-    margin: 40px 120px;
+    margin: 40px 150px;
     line-height: 1.6;
     color: #111827;
     max-width: 675px;
@@ -445,7 +438,8 @@ header {
 
 
 .recommendations-section {
-  margin: 70px 120px;
+  margin: 70px auto;
+  max-width: 1700px;
   font-family: 'Poppins', sans-serif;
 }
 
