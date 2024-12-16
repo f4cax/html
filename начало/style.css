@@ -312,19 +312,6 @@ body {
 
 
 @media (max-width: 1140px){
-  .hero{
-    margin-top: 0px;
-  }
-  .hero-text {
-    position: relative;
-    top: 0;
-    left: 0;
-    max-width: 100%;
-    padding: 0 10px;
-  }
-}
-
-@media (max-width: 840px) {
   .hero {
     height: 78vh;
     background-color: #d1d1d1;
@@ -344,13 +331,15 @@ body {
     max-width: 100%;
     padding: 0 10px;
   }
+}
 
-  .hero-text .small-text {
-    font-size: 18px;
+@media (max-width: 560px) {
+ .hero-text .small-text {
+    font-size: 22px;
   }
 
   .hero-text .main-heading {
-    font-size: 24px;
+    font-size: 28px;
     line-height: 1.4;
     margin: 10px 0;
   }
@@ -371,28 +360,8 @@ body {
   }
 }
 
-@media (max-width: 300px) {
-  .hero {
-    height: 78vh;
-    background-color: #d1d1d1;
-    margin-top: 0px;
-    justify-content: center;
-    align-items: flex-start;
-  }
-
-  .hero-image img {
-    display: none;
-  }
-
-  .hero-text {
-    position: relative;
-    top: 0;
-    left: 0;
-    max-width: 100%;
-    padding: 0 10px;
-  }
-
-  .hero-text .small-text {
+@media (max-width: 319px) {
+ .hero-text .small-text {
     font-size: 18px;
   }
 
@@ -403,18 +372,9 @@ body {
   }
 
   .explore-button {
-    font-size: 18px; 
+    font-size: 14px; 
     padding: 15px 30px;
     margin-top: 10px;
-  }
-
-  .image-controls {
-    left: 3px;
-    transform:translateX(0)
-  }
-  
-  .image-controls .control {
-    background-color: #111827;
   }
 }
 
