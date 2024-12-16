@@ -153,7 +153,7 @@ header {
     gap: 30px;
     margin: 40px auto;
     max-width: 1700px;
-    min-height: 70vh;
+    min-height: 50vh;
     align-items: flex-start;
 }
   
@@ -394,10 +394,10 @@ header {
 
 
   .product-description {
-    margin: 40px 150px;
+    margin: 70px auto;
     line-height: 1.6;
     color: #111827;
-    max-width: 675px;
+    max-width: 1700px;
   }
   
   .product-description h1 {

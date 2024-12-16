@@ -28,11 +28,12 @@ main{
   margin-top: 90px;
 }
 
-@media (max-width: 300px) {
+@media (max-width: 1140px) {
   main{
-    margin-top: 134px;
+    margin-top: 0px;
   }
 }
+
 .logo {
   font-size: 32px;
   font-weight: bold;
@@ -113,42 +114,79 @@ display: none;
 }
 
 
-@media (max-width: 300px) {
-header {
-    flex-direction: row;
-    padding: 10px;
-    height: 112px;
-}
+@media (max-width: 1140px) {
+  header {
+      flex-direction: row;
+      padding: 0px;
+      height: 112px;
+      width: auto;
+      position: relative;
+  }
 
-.logo {
-    display: none;
-}
+  .logo {
+      display: none;
+  }
 
-.search-container {
-    width: 80%;  
+  .search-container {
+      width: 70%;  
+  }
+
+  .search-bar {
+      width: 100%; 
+  }
+
+  .icons {
+      display: none;
+  }
+
+  .icon-left, .icon-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    text-decoration: none;
+    color: inherit;
+    margin-right: 8px;
     margin-left: 10px;
-    margin-right: 10px;
-    height: 62px;
+  }
 }
 
-.search-bar {
-    width: 100%; 
-}
 
-.icons {
-    display: none;
-}
+@media (max-width: 300px) {
+  header {
+      flex-direction: row;
+      padding: 0px;
+      height: 112px;
+      width: auto;
+      position: relative;
+  }
 
-.icon-left, .icon-right{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 24px;
-  text-decoration: none;
-  color: inherit;
-  margin-left: 16;
-  margin-right: 36px;
-}
+  .logo {
+      display: none;
+  }
+
+  .search-container {
+      width: 70%;  
+  }
+
+  .search-bar {
+      width: 100%; 
+  }
+
+  .icons {
+      display: none;
+  }
+
+  .icon-left, .icon-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    text-decoration: none;
+    color: inherit;
+    margin-right: 8px;
+    margin-left: 10px;
+  }
 }
 
 .container {
@@ -617,4 +655,40 @@ input[type="number"] {
     width: 50px;
     height: auto;
     display: block;
+  }
+
+  @media (max-width: 768px) {
+    .footer{
+      display: flex;
+      justify-content: flex-start;
+      padding: 20px;
+    }
+  
+    .footer-content {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 30px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .site-footer{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .footer-lower {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .footer-text {
+      font-size: 12px;
+    }
+  
+    .payment-icon {
+      width: 40px;
+    }
   }
