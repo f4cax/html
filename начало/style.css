@@ -28,6 +28,7 @@ body {
       margin-top: 0px;
     }
   }
+  
   .logo {
     font-size: 32px;
     font-weight: bold;
@@ -109,44 +110,6 @@ body {
 
 
 @media (max-width: 1140px) {
-  header {
-      flex-direction: row;
-      padding: 0px;
-      height: 112px;
-      width: auto;
-      position: relative;
-  }
-
-  .logo {
-      display: none;
-  }
-
-  .search-container {
-      width: 70%;  
-  }
-
-  .search-bar {
-      width: 100%; 
-  }
-
-  .icons {
-      display: none;
-  }
-
-  .icon-left, .icon-right{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
-    text-decoration: none;
-    color: inherit;
-    margin-right: 8px;
-    margin-left: 10px;
-  }
-}
-
-
-@media (max-width: 300px) {
   header {
       flex-direction: row;
       padding: 0px;

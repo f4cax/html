@@ -10,6 +10,31 @@ body {
     background: white;
 }
 
+.top-icon{
+  display: none;
+}
+
+@media (max-width: 760px){
+  .top-icon {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    margin: 20px 0;
+  }
+
+  .top-icon a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  .top-icon-media {
+    height: 38px;
+    cursor: pointer;
+  }
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -151,44 +176,6 @@ display: none;
   }
 }
 
-
-@media (max-width: 300px) {
-  header {
-      flex-direction: row;
-      padding: 0px;
-      height: 112px;
-      width: auto;
-      position: relative;
-  }
-
-  .logo {
-      display: none;
-  }
-
-  .search-container {
-      width: 70%;  
-  }
-
-  .search-bar {
-      width: 100%; 
-  }
-
-  .icons {
-      display: none;
-  }
-
-  .icon-left, .icon-right{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
-    text-decoration: none;
-    color: inherit;
-    margin-right: 8px;
-    margin-left: 10px;
-  }
-}
-
 .container {
     display: flex;
     gap: 20px;
@@ -200,6 +187,15 @@ display: none;
     width: 300px;
     padding: 20px;
     box-sizing: border-box;
+}
+
+@media (max-width: 1140px){
+  .container{
+    margin: 0 auto;
+  }
+  .filters{
+    display: none;
+  }
 }
 
 .filter-section {
@@ -517,6 +513,77 @@ input[type="number"] {
     font-size: 14px;
     text-decoration: line-through;
     color: #aaa;
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin: 40px auto;
+    max-width: 1700px;
+}
+
+.pagination a {
+    display: inline-block;
+    text-decoration: none;
+    color: #111827;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    background-color: none;
+    transition: background-color 0.3s ease;
+}
+
+.pagination a:hover {
+    background-color: #d1d5db;
+}
+
+.pagination .active {
+    background-color: #111827;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+  .pagination {
+      justify-content: center;
+      margin: 20px auto;
+  }
+
+  .pagination a {
+      font-size: 14px;
+      padding: 6px 10px;
+  }
+}
+
+
+  @media (max-width: 650px) {
+    .recommendations-grid {
+      grid-template-columns: 1fr;
+      justify-items: center;
+      margin: 0 auto;
+      max-width: 100%;
+    }
+  
+    .recommendations-header span {
+      display: none;
+    }
+    
+    .recommendations-header h2 {
+      font-size: 28px;
+    }
+    
+    .recommendation-card {
+      margin: 0 auto;
+      padding: 10px;
+    }
+    
+    .product-title, .current-price {
+      font-size: 14px;
+    }
+  
+    .old-price, .category, .rating {
+      font-size: 12px;
+    }
   }
 
 .footer {
